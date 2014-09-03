@@ -34,17 +34,6 @@ set_post_thumbnail_size( form_option('thumbnail_size_w&&echo=false'), form_optio
 3. Activate the plugin through the "Plugins" menu in WordPress
 4. Add the hook in a post. Example: [getcatlist 3]
 
-== Frequently Asked Questions ==
 
-None, yet.
-
-== Screenshots ==
-
-1. The plugin in action.
-
-== Changelog ==
-
-= 1.0 =
-* Creation
 
 
