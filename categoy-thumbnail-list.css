@@ -1,0 +1,71 @@
+/*
+Category Thumbnail Excerpt Read more List
+WordPress Plugin by Ajit, http://theajit.in
+
+*/
+.categoryThumbnailList {
+	display:block;
+	clear:both;
+}
+.categoryThumbnailList * {
+	border:0px;
+	padding:0px;
+	margin:0px;
+	bottom:0 !important;
+}
+.categoryThumbnailList .categoryThumbnailList_item {
+	width: 180px;
+    height: 450px;
+    display: block-inline;
+    float: left;
+    margin: 0px 10px 0px 0px;
+    text-align: center;
+    overflow: hidden;
+	
+}
+
+
+.categoryThumbnailList_clearer {
+	display:block;
+	clear:both;
+	height:0px;
+	visibility:hidden;
+	overflow:hidden;
+}
+.button.medium {
+padding-top: 0.5625em;
+padding-right: 1.125em;
+padding-bottom: 0.625em;
+padding-left: 1.125em;
+font-size: 0.8125em;
+}
+.categoryThumbnailList_item figure{display:block;}
+.categoryThumbnailList_item figure { margin: 0; }
+.title{display:block;}
+.title { height:10px; margin-bottom: 50px; }
+.excerpt_container {  text-align: left; padding: 16px; padding: 1rem; min-height: 174px; height:60px; }
+.button_container  {
+
+position: relative;
+bottom:-10px !important;
+}
+
+.small.fancy {
+font-size: 11px;
+font-size: 0.688rem;
+}
+.fancy {
+background: #4fca74;
+box-shadow: none;
+/* border: 1px solid rgba(0, 0, 0, 0.1); */
+border: none;
+-webkit-border-radius: 0.188em;
+-moz-border-radius: 0.188em;
+-ms-border-radius: 0.188em;
+-o-border-radius: 0.188em;
+border-radius: 0.188em;
+padding-top: 0.75em;
+}
+
+
+
