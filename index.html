@@ -1,0 +1,96 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Category-thumbnail-excerpt-plugin</title>
+  <meta name="description" content="Lists a category with thumbnails,title,excerpt with a read more link in Wordpress">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Category-thumbnail-excerpt-plugin</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">Lists a category with thumbnails,title,excerpt with a read more link in Wordpress</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/theajit/Category-Thumbnail-Excerpt-Plugin/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/theajit/Category-Thumbnail-Excerpt-Plugin/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/theajit/Category-Thumbnail-Excerpt-Plugin" class="code">View Category-thumbnail-excerpt-plugin on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <p>Lists a category with thumbnails,title,excerpt with a read more link</p>
+
+<p>== Description ==</p>
+
+<p>These must be in function.php in the theme for the plugin to work for thumbnail and excerpt:</p>
+
+<p>add_theme_support( 'post-thumbnails' );</p>
+
+<p>set_post_thumbnail_size( form_option('thumbnail_size_w&amp;&amp;echo=false'), form_option('thumbnail_size_h&amp;&amp;echo=false'), true );</p>
+
+<p>function custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+function custom_excerpt_more( $more ) {
+    return '';
+}
+add_filter( 'excerpt_more', 'custom_excerpt_more' );</p>
+
+<p>You'll also need to add thumbnails to the posts you want visible in the list.</p>
+
+<p>After that, all you need to do is to add the hook <a href="where%201%20is%20a%20categoy%20id">getcatlist 1</a> to your post.</p>
+
+<p>== Installation ==</p>
+
+<p>This section describes how to install the plugin and get it working.</p>
+
+<ol>
+<li>Upload "categoy-thumbnail-list" to the "/wp-content/plugins/" directory</li>
+<li>Add the following rows to your themes functions.php
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( form_option('thumbnail_size_w&amp;&amp;echo=false'), form_option('thumbnail_size_h&amp;&amp;echo=false'), true );</li>
+<li>Activate the plugin through the "Plugins" menu in WordPress</li>
+<li>Add the hook in a post. Example: [getcatlist 3]</li>
+</ol>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/theajit" class="avatar"><img src="https://avatars3.githubusercontent.com/u/5110531?v=2&amp;s=60" width="48" height="48"></a> <a href="https://github.com/theajit">theajit</a> maintains <a href="https://github.com/theajit/Category-Thumbnail-Excerpt-Plugin">Category-thumbnail-excerpt-plugin</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/theajit/Category-Thumbnail-Excerpt-Plugin/tarball/master" class="tar">tar</a><a href="https://github.com/theajit/Category-Thumbnail-Excerpt-Plugin/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
